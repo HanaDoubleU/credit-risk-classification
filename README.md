@@ -10,9 +10,9 @@ twentieth week's assignment
 
 ## results
 * this logistic regression model:
-  * accuracy score:
-  * precision:
-  * recall scores:
+  * accuracy score: The accuracy score in the classification report indicates the proportion of <em>all</em> correct predictions for either result over <em>all</em> predictions. For example, the accuracy score for this model in general is ~0.99, signifying that ~99% of this model's predictions are correct. To understand the ~1% of predictions where this model seems to fall short, the following parameters below can be consulted:
+   * precision: Precision in the classification report indicates the proportions of correct predictions over all of that specific result's predictions, whether they are actual positives or not. For example, the precision for healthy loans is 1.00, signifying that this model was able to predict all of the actual 0s, while the precision for high-risk loans is 0.87, signifying that this model was able to predict or detect only 87% of the actual 1s.
+   * recall scores: Recall scores indicate the proportions of correct predictions over all of that specific result's actual positives. For example, the recall score for healthy loans is 1.00, signifying that this model predicted all of the actual 0s in the data, while the recall score for high-risk loans is 0.95, signifying that this model predicted only 95% of the actual 1s in the data. The remaining 5% signifies the false negatives (i.e. high-risk loans mistakenly predicted to be healthy loans).
 
 ## summary
 * This logistic regression model seems to perform best when predicting healthy loans because its precision and recall in 0s is exactly 1.00, meaning it yeilds no false positives or negatives. As such, I know that it would perform best on this front.
