@@ -2,8 +2,17 @@
 twentieth week's assignment
 
 ## overview of analysis
-* The purpose of the following analysis is to...
-* The financial information in this data (Credit_Risk/Resources/lending_data.csv) is on...and what I needed to predict was...
+* The purpose of the following analysis is to (1) meaningfully interpret the steps in Credit_Risk/credit_risk_classification.ipynb and (2) truly understand its results and implications.
+* The financial information in this data (Credit_Risk/Resources/lending_data.csv) is on 8 variables relating to the nature of the loans themselves and their surrounding circumstances:
+  1. loan_size
+  2. interest_rate
+  3. borrowers_income
+  4. debt_to_income
+  5. num_of_accounts
+  6. derogatory_marks
+  7. total_debt
+  8. loan_status (under which 0 represents healthy and 1 represents high-risk)
+  What I needed to predict was the 8th variable, loan_status. In other words, I needed to see how the other variables could determine a healthy or high-risk loan.
 * Further information like value_count of each variable:
 * Stages of machine learning process in Credit_Risk/credit_risk_classification.ipynb.
 * Methods which I used include 'LogisticRegression' and other algorithms, such as...
