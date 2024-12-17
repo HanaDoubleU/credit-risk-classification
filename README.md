@@ -13,7 +13,13 @@ twentieth week's assignment
   7. total_debt
   8. loan_status (under which 0 represents healthy and 1 represents high-risk)
   What I needed to predict was the 8th variable, loan_status. In other words, I needed to see how the other variables could determine a healthy or high-risk loan.
-* Further information like value_count of each variable:
+* Further information on each variable/column:
+  * All of the values in lending_data.csv are floats.
+  * The data is not scaled, as nearly half of the variables' means are far from 0, a couple of their standard deviations are far from 1, and the ranges (demonstrated by the variables' drastically differing minimums and maximums) vary greatly.
+  * There is 1 column which is a boolean: It is loan_status, the assigned target/y under which 0 specifies a healthy loan and 1 specifies a high-risk loan.
+  * There is 1 column which has 1 of 4 values: It is derogatory_marks under which the values range from 0 to 3.
+  * There is 1 column which has 1 of 17 values: It is num_of_accounts under which the values range from 0 to 16.
+  * The remaining 5 columns which have not yet been mentioned can be any number; though some like loan_size, interest_rate, and debt_to_income can be decimals.
 * Stages of machine learning process in Credit_Risk/credit_risk_classification.ipynb.
 * Methods which I used include 'LogisticRegression' and other algorithms, such as...
 
