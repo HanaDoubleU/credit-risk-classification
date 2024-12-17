@@ -13,15 +13,21 @@ twentieth week's assignment
   7. total_debt
   8. loan_status (under which 0 represents healthy and 1 represents high-risk)
   What I needed to predict was the 8th variable, loan_status. In other words, I needed to see how the other variables could determine a healthy or high-risk loan.
-* Further information on each variable/column:
+* Further information on each variable/column in lending_data.csv:
   * All of the values in lending_data.csv are floats.
   * The data is not scaled, as nearly half of the variables' means are far from 0, a couple of their standard deviations are far from 1, and the ranges (demonstrated by the variables' drastically differing minimums and maximums) vary greatly.
   * There is 1 column which is a boolean: It is loan_status, the assigned target/y under which 0 specifies a healthy loan and 1 specifies a high-risk loan.
   * There is 1 column which has 1 of 4 values: It is derogatory_marks under which the values range from 0 to 3.
   * There is 1 column which has 1 of 17 values: It is num_of_accounts under which the values range from 0 to 16.
   * The remaining 5 columns which have not yet been mentioned can be any number; though some like loan_size, interest_rate, and debt_to_income can be decimals.
-* Stages of machine learning process in Credit_Risk/credit_risk_classification.ipynb.
-* Methods which I used include 'LogisticRegression' and other algorithms, such as...
+* Stages of machine learning process in Credit_Risk/credit_risk_classification.ipynb:
+  1. I assigned the column which I wanted to predict as y, or my target.
+  2. I assigned the remaining columns as X, or my features.
+  3. I split the data for training data and testing data.
+  4. I created a logistic regression model with the training data.
+  5. I generated predictions for the testing data (i.e. X_test) with the logistic regression model fitted to the training data.
+  6. I made a confusion matrix. Then I made a classification report including the confusion matrix. These allowed for me to truly understand the results of the linear regression model.
+* Methods which I used include 'LogisticRegression'.
 
 ## results
 * this logistic regression model:
